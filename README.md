@@ -12,7 +12,7 @@ Autonomous robot and spatial AI enthusiast
 - Computer Vision
 
 ## 🌟 Notable Projects
-- [Capstone Project](https://github.com/baeminseongp/capstone)
+- [NUVI](https://github.com/RAISELab/Nuvi)
 - [Crash_Lab](https://github.com/Lee-Jun-Hwa/Crash_Lab)
 
 ---
