@@ -1,32 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>baeminseongp | Projects</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="project.html">Project</a>
+    <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <h1>Projects</h1>
-  <ul>
-    <li>
-      <strong>Capstone Project</strong>: Autonomous robotics using ROS and AI technologies.
-      <a href="https://github.com/baeminseongp/capstone">[GitHub]</a>
-    </li>
-    <li>
-      <strong>Crash_Lab</strong>: Collaborative robotics and algorithms.
-      <a href="https://github.com/Lee-Jun-Hwa/Crash_Lab">[GitHub]</a>
-    </li>
-  </ul>
+  <section class="projects">
+    <h1>Projects</h1>
+    <p class="subtitle">Check out my creations.</p>
+
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <a class="project-item" href="project1.html">
+        <img src="assets/images/project1.jpg" alt="NUVI Autonomous Mobility" />
+        <div class="project-overlay">
+          <div class="overlay-content">
+            <h3>NUVI Autonomous Mobility</h3>
+            <p>Autonomous robotics project utilizing ROS and AI technologies.</p>
+            <span class="view-details">View Details →</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 2 -->
+      <a class="project-item" href="project2.html">
+        <img src="assets/images/project2.jpg" alt="Crowd data-based navigation and arrival time prediction system" />
+        <div class="project-overlay">
+          <div class="overlay-content">
+            <h3>Crowd data-based navigation and arrival time prediction system</h3>
+            <p>Congestion-aware path planning and ETA prediction system.</p>
+            <span class="view-details">View Details →</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 3 -->
+      <a class="project-item" href="project3.html">
+        <img src="assets/images/project3.jpg" alt="Crash Lab : GPT 3.5 based hospital guidance robot" />
+        <div class="project-overlay">
+          <div class="overlay-content">
+            <h3>Crash Lab : hospital guidance robot</h3>
+            <p>Customer response using GPT 3.5 Turbo API, Navigation and localization using LiDAR</p>
+            <span class="view-details">View Details →</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 4 -->
+      <a class="project-item" href="project4.html">
+        <img src="assets/images/project4.jpg" alt="Tic-Tac-Toe Game Robot Arm (Educational)" />
+        <div class="project-overlay">
+          <div class="overlay-content">
+            <h3>Tic-Tac-Toe Game Robot Arm (Educational)</h3>
+            <p>After recognizing ox with deep learning, move the ox icons to the board with a robot arm.</p>
+            <span class="view-details">View Details →</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 5 -->
+      <a class="project-item" href="project5.html">
+        <img src="assets/images/project5.jpg" alt="Introduction to Robotics Design : color tracking 4WD mecanum wheel robot" />
+        <div class="project-overlay">
+          <div class="overlay-content">
+            <h3>Introduction to Robotics Design : color tracking 4WD mecanum wheel robot</h3>
+            <p>Introduction to Robotics Design : color tracking 4WD mecanum wheel robot</p>
+            <span class="view-details">View Details →</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
 
   <footer>
-    © baeminseongp 2025
+    © baeminseongp 2025 | 
+    <a href="https://github.com/baeminseongp" target="_blank">GitHub</a>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

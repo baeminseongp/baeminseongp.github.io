@@ -1,65 +1,60 @@
-/* styles.css */
-
-/* Reset and Base Styles */
+/* Reset & Base */
 html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+  margin: 0; padding: 0;
+  width: 100%; height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f5f5f5;
   color: #333;
   overflow-x: hidden;
 }
-
 a { text-decoration: none; color: inherit; }
 
 /* Navigation Bar */
 nav {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  top: 0; left: 0; width: 100%;
+  display: flex; justify-content: center;
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0,0,0,0.3);
   z-index: 10;
 }
-
 nav a {
-  margin: 0 1rem;
-  color: #fff;
-  font-weight: 500;
+  margin: 0 1rem; color: #fff; font-weight: 500;
   transition: color 0.3s;
 }
-
-nav a:hover {
-  color: #ddd;
-}
+nav a:hover { color: #ddd; }
 
 /* Hero Section */
-.hero-code-container {
+.hero {
   position: relative;
-  z-index: 2;
-  max-width: 600px;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%; height: 100vh;
+  background: url('assets/images/hero.jpg') center center / cover no-repeat;
+  display: flex; align-items: center; justify-content: center;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+/* 코드 에디터 컨테이너 */
+.hero-code-container {
+  position: relative; z-index: 2;
+  width: 90%; max-width: 600px;
   background: #1e1e1e;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
   overflow: hidden;
 }
+/* 윈도우 상단 버튼 모양 */
 .editor-header {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem;
-  background: #2d2d2d;
+  display: flex; align-items: center;
+  padding: 0.5rem; background: #2d2d2d;
 }
 .circle {
   display: inline-block;
-  width: 12px;
-  height: 12px;
+  width: 12px; height: 12px;
   border-radius: 50%;
   margin-right: 0.5rem;
 }
@@ -67,10 +62,10 @@ nav a:hover {
 .circle.yellow { background: #ffbd2e; }
 .circle.green  { background: #27c93f; }
 
+/* 애니메이션 텍스트 영역 */
 .hero-text {
   font-family: 'Courier New', Courier, monospace;
-  color: #fff;
-  text-align: left;
+  color: #fff; text-align: left;
   padding: 1.5rem;
 }
 .hero-text .line {
@@ -79,16 +74,9 @@ nav a:hover {
   margin: 0.75rem 0;
   animation: fadeInUp 1s forwards;
 }
-
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 /* Footer */
@@ -100,60 +88,145 @@ footer {
   font-size: 0.9rem;
 }
 
-/* About Section */
+/* About 섹션 이후 스타일(여전히 적용됩니다) */
 .about {
-  display: flex;
-  align-items: flex-start;
-  max-width: 1000px;
-  margin: 4rem auto;
-  padding: 0 1rem;
+  display: flex; align-items: flex-start;
+  max-width: 1000px; margin: 4rem auto; padding: 0 1rem;
 }
 .about-image img {
-  width: 300px;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
+  width: 300px; border-radius: 10px; object-fit: cover;
 }
-.about-content {
-  margin-left: 2rem;
-}
-.profile, .skills {
-  margin-top: 2rem;
-}
-.profile ul {
-  list-style: none;
-  padding: 0;
-}
-.profile li {
-  margin-bottom: 0.5rem;
-}
+.about-content { margin-left: 2rem; }
+.profile, .skills { margin-top: 2rem; }
+.profile ul, .skills ul { list-style: none; padding: 0; }
+.profile li, .skills li { margin-bottom: 0.5rem; }
 
-/* Skill Bar Styles */
+/* Skill Bar */
 .skill-bar {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
+  display: flex; align-items: center; margin-bottom: 1rem;
 }
-.skill-name {
-  width: 120px;
-  font-weight: 500;
-}
+.skill-name { width: 120px; font-weight: 500; }
 .bar-bg {
-  flex: 1;
-  height: 8px;
-  background: #ddd;
-  border-radius: 4px;
-  margin: 0 0.5rem;
-  overflow: hidden;
+  flex: 1; height: 8px; background: #ddd;
+  border-radius: 4px; margin: 0 0.5rem; overflow: hidden;
 }
 .bar-fill {
-  height: 100%;
-  background: #4caf50;
+  height: 100%; background: #4caf50;
   border-radius: 4px 0 0 4px;
   transition: width 1s ease-in-out;
 }
 .skill-percent {
-  width: 40px;
-  text-align: right;
+  width: 40px; text-align: right; font-size: 0.9rem;
+}
+
+/* ── Projects Grid ── */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+/* 프로젝트 아이템 기본 스타일 */
+.project-item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+.project-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Hover Overlay (슬라이드인) ── */
+.project-overlay {
+  position: absolute;
+  top: 0; right: -100%;
+  width: 100%; height: 100%;
+  background: rgba(30,30,30,0.9);
+  color: #fff;
+  transition: right 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-item:hover .project-overlay {
+  right: 0;
+}
+
+/* ── Overlay 내부 콘텐츠 ── */
+.overlay-content {
+  padding: 1rem;
+  text-align: left;
+}
+.overlay-content h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+.overlay-content p {
+  margin: 0 0 1rem;
   font-size: 0.9rem;
+  line-height: 1.4;
+}
+.view-details {
+  font-weight: 500;
+  text-decoration: underline;
+}
+.view-details:hover {
+  color: #4caf50;
+}
+
+/* ── Project Detail Section ── */
+.project-detail {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+.project-detail h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.project-detail .subtitle {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.detail-content img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.detail-content p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.detail-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.detail-content ul {
+  list-style: disc inside;
+  margin-bottom: 1.5rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  color: #4caf50;
+  text-decoration: none;
+}
+.back-link:hover {
+  text-decoration: underline;
 }

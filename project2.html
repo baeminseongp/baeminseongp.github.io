@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>baeminseongp | Crowd‑Based Navigation &amp; ETA Prediction</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="project-detail">
+    <h1>Crowd‑Based Navigation &amp; ETA Prediction</h1>
+    <p class="subtitle">Congestion‑aware path planning and arrival time estimation.</p>
+
+    <div class="detail-content">
+      <img src="assets/images/project2.jpg" alt="Crowd data-based navigation and ETA prediction system" />
+
+      <p>
+        This system builds a time‑dependent costmap from public crowd‑density datasets 
+        and uses it to compute safe, efficient routes. Speeds and distance‐bias parameters 
+        are adjusted dynamically based on real‐time congestion levels to generate 
+        precise ETA predictions.
+      </p>
+
+      <h2>Key Features</h2>
+      <ul>
+        <li>Ingestion of time‐series crowd density data</li>
+        <li>Costmap generation reflecting congestion risk</li>
+        <li>Dynamic speed &amp; distance bias tuning</li>
+        <li>Sigmoid smoothing for stable ETA outputs</li>
+      </ul>
+
+      <h2>Tech Stack</h2>
+      <ul>
+        <li>ROS2 (Nav2, Costmap Plugins)</li>
+        <li>Python (NumPy, JSON handling)</li>
+        <li>SpatioTemporalVoxelLayer for obstacle avoidance</li>
+        <li>Public crowd‐density APIs</li>
+      </ul>
+
+      <a class="back-link" href="projects.html">&larr; Back to Projects</a>
+    </div>
+  </section>
+
+  <footer>
+    © baeminseongp 2025 | 
+    <a href="https://github.com/baeminseongp" target="_blank">GitHub</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

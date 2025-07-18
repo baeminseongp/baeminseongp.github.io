@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>baeminseongp | Home</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <!-- 네비게이션은 hero 바깥 -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -16,25 +18,29 @@
 
   <!-- Hero Section -->
   <section class="hero">
+    <!-- 어두운 오버레이 -->
     <div class="hero-overlay"></div>
-  
+
+    <!-- 코드 에디터 스타일 컨테이너 -->
     <div class="hero-code-container">
-      <!-- 코드 에디터 윈도우 헤더(윈도우 닫기·최소화·최대화 버튼) -->
+      <!-- "윈도우 컨트롤" 모양의 버튼들 -->
       <div class="editor-header">
         <span class="circle red"></span>
         <span class="circle yellow"></span>
         <span class="circle green"></span>
       </div>
-  
-      <!-- 애니메이션 텍스트가 들어갈 영역 -->
+      <!-- 애니메이션 텍스트 영역 -->
       <div class="hero-text" id="hero-text"></div>
     </div>
   </section>
 
+  <!-- 푸터 -->
   <footer>
-    © baeminseongp 2025 | <a href="https://github.com/baeminseongp" target="_blank">GitHub</a>
+    © baeminseongp 2025 | 
+    <a href="https://github.com/baeminseongp" target="_blank">GitHub</a>
   </footer>
 
+  <!-- 애니메이션 스크립트 -->
   <script src="script.js"></script>
 </body>
 </html>
