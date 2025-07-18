@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     lines.forEach((text, index) => {
       const p = document.createElement('p');
       p.classList.add('line');
-      p.textContent = text;S
+      p.textContent = text;
       // set animation delay so each line appears sequentially
       p.style.animationDelay = `${index * 1}s`;
       container.appendChild(p);
