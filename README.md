@@ -1,5 +1,3 @@
-# baeminseongp.github.io
-
 ## 👋 Hi, I'm Minseong Bae
 
 **Robotics major at Hanyang University Erica**
