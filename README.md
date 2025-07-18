@@ -1,8 +1,8 @@
 # baeminseongp.github.io
 
-## 👋 Hi, I'm baeminseongp
+## 👋 Hi, I'm Minseong Bae
 
-**Robotics major at Hanyang University Erica**  
+**Robotics major at Hanyang University Erica**
 Autonomous robot and spatial AI enthusiast
 
 ### 🚀 Skills & Technologies
