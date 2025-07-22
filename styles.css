@@ -50,8 +50,9 @@ nav a:hover { color: #ddd; }
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.5);
   overflow: hidden;
-  color: #e0e0e0;              /* 밝은 글자색 */
+  color: #fff;              /* 밝은 글자색 */
   font-family: 'Courier New', Courier, monospace;
+  align-self: center;
 }
 
 /* ── 에디터 상단 윈도우 버튼 ── */
