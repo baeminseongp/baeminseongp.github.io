@@ -1,5 +1,7 @@
-/* Reset & Base */
+/* ── Reset & Base ── */
 html, body {
+  display: flex; flex-direction: column;
+  min-height: 100vh;
   margin: 0; padding: 0;
   width: 100%; height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -9,7 +11,7 @@ html, body {
 }
 a { text-decoration: none; color: inherit; }
 
-/* Navigation Bar */
+/* ── Navigation Bar ── */
 nav {
   position: absolute;
   top: 0; left: 0; width: 100%;
@@ -24,7 +26,7 @@ nav a {
 }
 nav a:hover { color: #ddd; }
 
-/* Hero Section */
+/* ── Hero Section (다른 페이지용) ── */
 .hero {
   position: relative;
   width: 100%; height: 100vh;
@@ -38,19 +40,25 @@ nav a:hover { color: #ddd; }
   z-index: 1;
 }
 
-/* 코드 에디터 컨테이너 */
+/* ── 코드 에디터 컨테이너 (About 페이지) ── */
 .hero-code-container {
-  position: relative; z-index: 2;
+  position: relative; 
+  z-index: 2;
   width: 90%; max-width: 600px;
-  background: #1e1e1e;
+  margin: 4rem auto;           /* 화면 중앙 배치 */
+  background: #1e1e1e;         /* 코드 에디터 배경색 */
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.5);
   overflow: hidden;
+  color: #e0e0e0;              /* 밝은 글자색 */
+  font-family: 'Courier New', Courier, monospace;
 }
-/* 윈도우 상단 버튼 모양 */
+
+/* ── 에디터 상단 윈도우 버튼 ── */
 .editor-header {
   display: flex; align-items: center;
-  padding: 0.5rem; background: #2d2d2d;
+  padding: 0.5rem; 
+  background: #2d2d2d;
 }
 .circle {
   display: inline-block;
@@ -62,7 +70,7 @@ nav a:hover { color: #ddd; }
 .circle.yellow { background: #ffbd2e; }
 .circle.green  { background: #27c93f; }
 
-/* 애니메이션 텍스트 영역 */
+/* ── (다른 페이지용) 애니메이션 텍스트 ── */
 .hero-text {
   font-family: 'Courier New', Courier, monospace;
   color: #fff; text-align: left;
@@ -79,7 +87,7 @@ nav a:hover { color: #ddd; }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Footer */
+/* ── Footer ── */
 footer {
   text-align: center;
   padding: 1rem 0;
@@ -88,26 +96,41 @@ footer {
   font-size: 0.9rem;
 }
 
-/* About */
-.about {
-  display: flex; align-items: flex-start;
-  max-width: 1000px; margin: 4rem auto; padding: 0 1rem;
+/* ── About 섹션 ── */
+.hero-code-container .about {
+  display: flex; 
+  align-items: flex-start;
+  padding: 1.5rem;
 }
 .about-image img {
-  width: 300px; border-radius: 10px; object-fit: cover;
+  width: 300px; 
+  border-radius: 10px; 
+  object-fit: cover;
 }
-.about-content { margin-left: 2rem; }
-.profile, .skills { margin-top: 2rem; }
-.profile ul, .skills ul { list-style: none; padding: 0; }
-.profile li, .skills li { margin-bottom: 0.5rem; }
+.about-content {
+  margin-left: 2rem;
+}
 
-/* Skill Bar */
+/* ── Profile & Skills ── */
+.profile, .skills {
+  margin-top: 2rem;
+}
+.profile ul, .skills ul {
+  list-style: none; padding: 0;
+}
+.profile li, .skills li {
+  margin-bottom: 0.5rem;
+}
+
+/* ── Skill Bar ── */
 .skill-bar {
   display: flex; align-items: center; margin-bottom: 1rem;
 }
-.skill-name { width: 120px; font-weight: 500; }
+.skill-name {
+  width: 120px; font-weight: 500;
+}
 .bar-bg {
-  flex: 1; height: 8px; background: #ddd;
+  flex: 1; height: 8px; background: #555;
   border-radius: 4px; margin: 0 0.5rem; overflow: hidden;
 }
 .bar-fill {
@@ -119,14 +142,12 @@ footer {
   width: 40px; text-align: right; font-size: 0.9rem;
 }
 
-/* ── Projects Grid ── */
+/* ── Projects Grid (다른 페이지용) ── */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
 }
-
-/* 프로젝트 아이템 기본 스타일 */
 .project-item {
   position: relative;
   display: block;
@@ -144,10 +165,7 @@ footer {
   width: 100%;
   height: 150px;
   object-fit: cover;
-  display: block;
 }
-
-/* ── Hover Overlay (슬라이드인) ── */
 .project-overlay {
   position: absolute;
   top: 0; right: -100%;
@@ -162,20 +180,11 @@ footer {
 .project-item:hover .project-overlay {
   right: 0;
 }
-
-/* ── Overlay 내부 콘텐츠 ── */
-.overlay-content {
-  padding: 1rem;
-  text-align: left;
-}
 .overlay-content h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.1rem;
+  margin: 0 0 0.5rem; font-size: 1.1rem;
 }
 .overlay-content p {
-  margin: 0 0 1rem;
-  font-size: 0.9rem;
-  line-height: 1.4;
+  margin: 0 0 1rem; font-size: 0.9rem; line-height: 1.4;
 }
 .view-details {
   font-weight: 500;
@@ -185,64 +194,33 @@ footer {
   color: #4caf50;
 }
 
-/* ── Project Detail Section ── */
+/* ── Project Detail (다른 페이지용) ── */
 .project-detail {
   max-width: 800px;
   margin: 4rem auto;
   padding: 0 1rem;
 }
 .project-detail h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 2rem; margin-bottom: 0.5rem;
 }
 .project-detail .subtitle {
-  color: #666;
-  margin-bottom: 1.5rem;
+  color: #666; margin-bottom: 1.5rem;
 }
-
 .detail-content img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1.5rem;
+  width: 100%; max-height: 400px; object-fit: cover;
+  border-radius: 8px; margin-bottom: 1.5rem;
 }
-
-.detail-content p {
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+.detail-content p, .detail-content ul {
+  line-height: 1.6; margin-bottom: 1.5rem;
 }
-
 .detail-content h2 {
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
+  margin: 2rem 0 0.5rem;
 }
-
-.detail-content ul {
-  list-style: disc inside;
-  margin-bottom: 1.5rem;
-}
-
 .back-link {
   display: inline-block;
-  margin-top: 2rem;
-  color: #4caf50;
+  margin-top: 2rem; color: #4caf50;
   text-decoration: none;
 }
 .back-link:hover {
   text-decoration: underline;
-}
-
-.project-item img {
-  width: 100%;
-  height: 150px;          
-  object-fit: cover;       
-  display: block;
-}
-
-.detail-content img {
-  width: 100%;
-  height: auto;           
-  max-height: 400px;      
-  object-fit: cover;      
-  border-radius: 8px;
-  margin-bottom: 1.5rem;
 }
