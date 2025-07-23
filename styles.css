@@ -185,10 +185,7 @@ footer {
 section.projects {
   text-align: center;    /* 섹션 전체 텍스트 중앙 정렬 */
 }
-section.projects h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
+
 section.projects .subtitle {
   font-size: 1.1rem;
   margin-bottom: 2rem;
