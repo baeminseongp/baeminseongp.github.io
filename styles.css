@@ -26,7 +26,7 @@ nav a {
 }
 nav a:hover { color: #ddd; }
 
-/* ── Hero Section (다른 페이지용) ── */
+/* ── Hero Section ── */
 .hero {
   position: relative;
   width: 100%; height: 100vh;
@@ -44,7 +44,7 @@ nav a:hover { color: #ddd; }
 .hero-code-container {
   position: relative; 
   z-index: 2;
-  width: 90%; max-width: 600px;
+  width: 90%; max-width: 800px;
   margin: 4rem auto;           /* 화면 중앙 배치 */
   background: #1e1e1e;         /* 코드 에디터 배경색 */
   border-radius: 8px;
@@ -111,6 +111,44 @@ footer {
 .about-content {
   margin-left: 2rem;
 }
+.about {
+  display: flex;
+  gap: 2rem;            /* 컬럼 간 여백 */
+  padding: 1.5rem;
+}
+
+/* 왼쪽 컬럼: 사진 + 프로필 */
+.about-left {
+  flex: 0 0 300px;      /* 고정폭 300px */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* 오른쪽 컬럼: About Me + Skills */
+.about-right {
+  flex: 1;              /* 남은 공간 차지 */
+}
+
+/* 프로필, 스킬 제목 색상 조정 */
+.about-left .profile h2,
+.about-right .skills h2 {
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+/* 본문 텍스트(About Me) 글자색 */
+.about-right h1,
+.about-right p {
+  color: #fff;
+}
+
+/* 스킬바 내부 텍스트도 흰색 */
+.about-right .skill-name,
+.about-right .skill-percent {
+  color: #fff;
+}
+
 
 /* ── Profile & Skills ── */
 .profile, .skills {
