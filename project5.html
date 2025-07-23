@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>baeminseongp | 4WD Mecanum Color‑Tracking Robot</title>
+  <title>baeminseongp | object tracking and balancing robot</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,31 +15,29 @@
   </nav>
 
   <section class="project-detail">
-    <h1>4WD Mecanum Color‑Tracking Robot</h1>
+    <h1>object tracking and balancing robot</h1>
     <p class="subtitle">Introduction to Robotics Design course project.</p>
 
     <div class="detail-content">
-      <img src="assets/images/project5.jpg" alt="Color Tracking 4WD Mecanum Wheel Robot" />
+      <img src="assets/images/project5.jpg" alt="object tracking and balancing robot" />
 
       <p>
-        A four‐wheel mecanum robot that follows colored markers on the floor 
-        using a color‑detection algorithm and feedback control to navigate complex paths.
+        We used an IMU sensor to maintain the horizontal position of the plate according to acceleration. 
+        We also created a robot that can follow objects without losing them by using four Mecanum wheels.
       </p>
 
       <h2>Key Features</h2>
       <ul>
-        <li>Color segmentation and marker tracking</li>
+        <li>Color tracking</li>
         <li>Mecanum wheel kinematics for omni‐directional motion</li>
         <li>PID‐based motor control</li>
-        <li>ROS1 integration and pigpio encoder feedback</li>
+        <li>Horizontal direction maintenance control using IMU</li>
       </ul>
 
       <h2>Tech Stack</h2>
       <ul>
-        <li>ROS1 &amp; Python</li>
-        <li>OpenCV (Color detection)</li>
-        <li>Arduino &amp; pigpio</li>
-        <li>Raspberry Pi 4</li>
+        <li>Arduino &amp; C</li>
+        <li>Pixy camera</li>
       </ul>
 
       <a class="back-link" href="projects.html">&larr; Back to Projects</a>

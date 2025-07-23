@@ -181,12 +181,22 @@ footer {
   width: 40px; text-align: right; font-size: 0.9rem;
 }
 
-/* ── Projects Grid (다른 페이지용) ── */
+/* ── Projects Grid: 고정 2열 레이아웃 ── */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
+
+  /* 가운데 정렬을 원하시면 컨테이너 폭 제한 후 margin auto */
+  max-width: 900px;  
+  margin: 4rem auto  /* 상하 4rem, 좌우 자동 */;
 }
+.project-grid > .project-item:nth-child(5) {
+  grid-column: 1 / -1;      /* 1열부터 마지막(-1)열까지 */
+  justify-self: center;     /* 가로축 가운데 정렬 */
+  max-width: 400px;         /* 아이템 너비 제한(선택) */
+}
+
 .project-item {
   position: relative;
   display: block;
@@ -233,7 +243,7 @@ footer {
   color: #4caf50;
 }
 
-/* ── Project Detail (다른 페이지용) ── */
+/* ── Project Detail ── */
 .project-detail {
   max-width: 800px;
   margin: 4rem auto;
