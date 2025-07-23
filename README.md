@@ -1,7 +1,8 @@
 ## 👋 Hi, I'm Minseong Bae
 
 **Robotics major at Hanyang University Erica**
-Autonomous robot and spatial AI enthusiast
+
+- Autonomous robot and spatial AI enthusiast
 
 ## 🚀 Skills & Technologies
 - Python, C++
