@@ -2,13 +2,17 @@
 // Hero text animation: sequential fade-in of lines
 
 document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('hero-text');
+    if (!container) {
+      return;
+    }
+
     const lines = [
       'Hello, my name is',
       'Minseong Bae',
       'Student majoring in Robotics',
       'Welcome to my site!'
     ];
-    const container = document.getElementById('hero-text');
   
     lines.forEach((text, index) => {
       const p = document.createElement('p');

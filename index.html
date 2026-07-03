@@ -3,44 +3,205 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>baeminseongp | Home</title>
+  <title>Minseong Bae</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- 네비게이션은 hero 바깥 -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+  <nav class="site-nav">
+    <a class="brand" href="index.html">Minseong Bae</a>
+    <div class="nav-links" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <!-- 어두운 오버레이 -->
-    <div class="hero-overlay"></div>
-
-    <!-- 코드 에디터 스타일 컨테이너 -->
-    <div class="hero-code-container">
-      <!-- "윈도우 컨트롤" 모양의 버튼들 -->
-      <div class="editor-header">
-        <span class="circle red"></span>
-        <span class="circle yellow"></span>
-        <span class="circle green"></span>
+  <main class="page">
+    <header id="about" class="profile-header">
+      <div class="profile-copy">
+        <h1>Minseong Bae</h1>
+        <p class="email"><a href="mailto:alstjd1118@hanyang.ac.kr">alstjd1118@hanyang.ac.kr</a></p>
+        <p>
+          Hello. I am an undergraduate student majoring in Robotics at Hanyang University ERICA.
+          My work focuses on autonomous robots, spatial AI, 3D SLAM, navigation, and path planning.
+        </p>
+        <p>
+          I enjoy building systems that connect perception, planning, and control in real environments.
+          Recent projects include autonomous mobility for airport environments, crowd data-based navigation,
+          and LiDAR-based service robots.
+        </p>
+        <div class="text-links">
+          <a href="about.html">About</a>
+          <a href="projects.html">All Projects</a>
+          <a href="https://github.com/baeminseongp" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
       </div>
-      <!-- 애니메이션 텍스트 영역 -->
-      <div class="hero-text" id="hero-text"></div>
-    </div>
-  </section>
 
-  <!-- 푸터 -->
+      <figure class="profile-photo">
+        <img src="assets/images/profile.jpg" alt="Minseong Bae" />
+      </figure>
+    </header>
+
+    <section class="notice" aria-label="Current focus">
+      <p class="notice-title">Current Focus</p>
+      <p>
+        Developing autonomous robotics systems with ROS2, Nav2, RealSense sensors, SLAM,
+        computer vision, and data-driven route planning.
+      </p>
+    </section>
+
+    <section class="section" id="news">
+      <h2>News</h2>
+      <ul class="timeline">
+        <li>
+          <time>2025</time>
+          <span>Built NUVI autonomous mobility system with ROS2 Nav2, RealSense D455, RTAB-Map, and ORB-SLAM3.</span>
+        </li>
+        <li>
+          <time>2025</time>
+          <span>Designed a crowd data-based navigation and ETA prediction system using congestion-aware costmaps.</span>
+        </li>
+        <li>
+          <time>2024</time>
+          <span>Developed a hospital guidance robot with GPT-3.5 Turbo API, LiDAR localization, and path planning.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <h2>Projects</h2>
+        <a href="projects.html">View all</a>
+      </div>
+
+      <ol class="publication-list">
+        <li>
+          <img src="assets/images/project1.jpg" alt="NUVI Autonomous Mobility" />
+          <div>
+            <p class="tag">Autonomous Mobility</p>
+            <h3><a href="project1.html">NUVI Autonomous Mobility</a></h3>
+            <p>
+              Autonomous mobility system for airport environments with crowd-aware path planning,
+              ROS2 Nav2, RealSense D455 pointclouds, and web UI control.
+            </p>
+            <p class="meta">ROS2, Nav2, RTAB-Map, ORB-SLAM3, Python, C++</p>
+            <div class="paper-links">
+              <a href="project1.html">Details</a>
+              <a href="https://github.com/RAISELab/Nuvi.git" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <img src="assets/images/project2.png" alt="Crowd data-based navigation and ETA prediction system" />
+          <div>
+            <p class="tag">Navigation</p>
+            <h3><a href="project2.html">Crowd Data-Based Navigation and ETA Prediction</a></h3>
+            <p>
+              Congestion-aware route planning system that builds time-dependent costmaps from
+              public crowd-density data and estimates arrival time dynamically.
+            </p>
+            <p class="meta">ROS2, Costmap Plugins, Python, C++, Public APIs</p>
+            <div class="paper-links">
+              <a href="project2.html">Details</a>
+              <a href="https://github.com/RAISELab/Nuvi.git" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <img src="assets/images/project3.jpg" alt="Crash Lab hospital guidance robot" />
+          <div>
+            <p class="tag">Service Robot</p>
+            <h3><a href="project3.html">Crash Lab: Hospital Guidance Robot</a></h3>
+            <p>
+              Hospital guide robot that combines GPT-3.5 Turbo based interaction with
+              LiDAR mapping, AMCL localization, and ROS2 path planning.
+            </p>
+            <p class="meta">ROS2, YDLidar X2, OpenAI API, C++, WebSocket</p>
+            <div class="paper-links">
+              <a href="project3.html">Details</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <img src="assets/images/project4.webp" alt="Tic-Tac-Toe game robot arm" />
+          <div>
+            <p class="tag">Vision and Manipulation</p>
+            <h3><a href="project4.html">Tic-Tac-Toe Game Robot Arm</a></h3>
+            <p>
+              Educational robot arm project that recognizes O/X tokens with vision and places
+              them on a board using robot control logic.
+            </p>
+            <p class="meta">Python, PyTorch, OpenCV, ROS2</p>
+            <div class="paper-links">
+              <a href="project4.html">Details</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <img src="assets/images/project5.png" alt="Object tracking and balancing robot" />
+          <div>
+            <p class="tag">Robotics Design</p>
+            <h3><a href="project5.html">Object Tracking and Balancing Robot</a></h3>
+            <p>
+              Four-mecanum-wheel robot that follows colored objects while maintaining plate balance
+              using IMU feedback and PID-based motor control.
+            </p>
+            <p class="meta">Arduino, C, Pixy Camera, IMU, PID Control</p>
+            <div class="paper-links">
+              <a href="project5.html">Details</a>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section split" id="experience">
+      <div>
+        <h2>Profile</h2>
+        <ul class="compact-list">
+          <li><strong>Education</strong> BSc in Robotics, Hanyang University ERICA, 2022-Present</li>
+          <li><strong>Interests</strong> Autonomous robots, SLAM, path planning, ETA prediction</li>
+          <li><strong>Projects</strong> NUVI, capstone robotics, Crash Lab collaboration</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Skills</h2>
+        <ul class="skill-cloud">
+          <li>Python</li>
+          <li>C++</li>
+          <li>ROS2</li>
+          <li>Nav2</li>
+          <li>SLAM</li>
+          <li>Computer Vision</li>
+          <li>Deep Learning</li>
+          <li>OpenCV</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>
+        I am open to robotics projects, research collaboration, and technical discussions.
+        Please reach out by email or GitHub.
+      </p>
+      <ul class="contact-list">
+        <li><strong>Email</strong> <a href="mailto:alstjd1118@hanyang.ac.kr">alstjd1118@hanyang.ac.kr</a></li>
+        <li><strong>GitHub</strong> <a href="https://github.com/baeminseongp" target="_blank" rel="noreferrer">github.com/baeminseongp</a></li>
+      </ul>
+    </section>
+  </main>
+
   <footer>
-    © baeminseongp 2025 | 
-    <a href="https://github.com/baeminseongp" target="_blank">GitHub</a>
+    © baeminseongp 2026
   </footer>
 
-  <!-- 애니메이션 스크립트 -->
   <script src="script.js"></script>
 </body>
 </html>
