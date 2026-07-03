@@ -6,7 +6,9 @@
   --line: #dedede;
   --accent: #1772d0;
   --accent-dark: #0b559f;
+  --warm: #b45309;
   --soft: #f1f4f7;
+  --soft-yellow: #fff7d6;
 }
 
 * {
@@ -97,13 +99,50 @@ nav a {
   letter-spacing: 0;
 }
 
-.email {
-  margin: 0 0 1.5rem;
-  color: var(--muted);
-}
-
 .profile-copy p {
   margin: 0 0 1rem;
+}
+
+.highlight {
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+.underline {
+  background: linear-gradient(transparent 62%, rgba(23, 114, 208, 0.18) 0);
+  color: #123f68;
+  font-weight: 600;
+}
+
+.icon-links {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0.55rem 0 1.35rem;
+}
+
+.icon-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.icon-links a:hover {
+  border-color: var(--accent);
+  box-shadow: 0 6px 14px rgba(23, 114, 208, 0.14);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.icon-links img {
+  width: 28px;
+  height: 28px;
 }
 
 .profile-photo {
@@ -175,11 +214,15 @@ nav a {
   grid-template-columns: 72px minmax(0, 1fr);
   gap: 1rem;
   padding: 0.28rem 0;
+  background: var(--soft-yellow);
+  border-left: 3px solid #f2c94c;
+  padding-left: 0.75rem;
 }
 
 .timeline time {
-  color: var(--muted);
+  color: var(--warm);
   font-size: 0.95rem;
+  font-weight: 700;
 }
 
 .publication-list {
@@ -251,12 +294,14 @@ nav a {
   margin: 0.1rem 0 0.35rem;
   font-size: 1.12rem;
   line-height: 1.35;
+  color: #111827;
 }
 
 .paper-list h3 {
   margin: 0.1rem 0 0.35rem;
   font-size: 1.12rem;
   line-height: 1.35;
+  color: #111827;
 }
 
 .publication-list p,
@@ -265,7 +310,7 @@ nav a {
 }
 
 .tag {
-  color: var(--muted);
+  color: var(--accent-dark);
   font-size: 0.9rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -310,11 +355,16 @@ nav a {
 
 .skill-cloud li {
   padding: 0.34rem 0.62rem;
-  background: var(--surface);
-  border: 1px solid var(--line);
+  background: #edf7f2;
+  border: 1px solid #b9ddcc;
   border-radius: 4px;
-  color: #333333;
+  color: #14532d;
   font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.contact-icons {
+  margin-bottom: 0;
 }
 
 footer {

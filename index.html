@@ -22,21 +22,26 @@
     <header id="about" class="profile-header">
       <div class="profile-copy">
         <h1>Minseong Bae</h1>
-        <p class="email"><a href="mailto:alstjd1118@hanyang.ac.kr">alstjd1118@hanyang.ac.kr</a></p>
+        <div class="icon-links" aria-label="Contact links">
+          <a href="mailto:alstjd1118@hanyang.ac.kr" aria-label="Email Minseong Bae">
+            <img src="assets/images/email-icon.svg" alt="Email" />
+          </a>
+          <a href="https://github.com/baeminseongp" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+            <img src="assets/images/github-icon.svg" alt="GitHub" />
+          </a>
+        </div>
         <p>
-          Hello. I am an undergraduate student majoring in Robotics at Hanyang University ERICA.
-          My work focuses on autonomous robots, spatial AI, 3D SLAM, navigation, and path planning.
+          Hello. I am a <strong class="highlight">first-year master's student</strong> in the
+          Department of Artificial Intelligence Convergence at Hanyang University.
         </p>
         <p>
-          I enjoy building systems that connect perception, planning, and control in real environments.
-          Recent projects include autonomous mobility for airport environments, crowd data-based navigation,
-          and LiDAR-based service robots.
+          My current research interests are <span class="underline">Vision-Language-Action model finetuning</span>
+          and <strong>online reinforcement learning</strong> for embodied AI systems.
         </p>
         <div class="text-links">
           <a href="#publications">Publications</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
-          <a href="https://github.com/baeminseongp" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
 
@@ -46,25 +51,25 @@
     </header>
 
     <section class="notice" aria-label="Current focus">
-      <p class="notice-title">Current Focus</p>
+      <p class="notice-title">🎯 Current Focus</p>
       <p>
-        Developing autonomous robotics systems with ROS2, Nav2, RealSense sensors, SLAM,
-        computer vision, and data-driven route planning.
+        Studying <strong>Vision-Language-Action models</strong>, task-specific finetuning,
+        and <span class="underline">online RL</span> for adaptive embodied agents.
       </p>
     </section>
 
     <section class="section" id="news">
-      <h2>News</h2>
+      <h2>🗞️ News</h2>
       <ul class="timeline">
         <li>
           <time>2026.7</time>
-          <span>Accepted to the Department of Artificial Intelligence Convergence at Hanyang University.</span>
+          <span><strong class="highlight">Accepted</strong> to the Department of Artificial Intelligence Convergence at Hanyang University.</span>
         </li>
       </ul>
     </section>
 
     <section class="section" id="publications">
-      <h2>Publications &amp; Presentations</h2>
+      <h2>📚 Publications &amp; Presentations</h2>
 
       <ol class="paper-list">
         <li>
@@ -74,9 +79,9 @@
             <strong>Minseong Bae</strong>, Youngeun Choi, Youngseong Kim, Taeseong Ahn,
             Aron Lee, Junhwa Lee, Youngmoon Lee
           </p>
-          <p class="meta">Poster presentation, Paper T14C.35, 2025</p>
+          <p class="meta"><strong>Poster presentation</strong>, Paper T14C.35, 2025</p>
           <p>
-            This work presents crowd-aware navigation and visualization for predictable
+            This work presents <span class="underline">crowd-aware navigation and visualization</span> for predictable
             human-robot interaction, integrating real-time crowd density data into dynamic
             heatmaps for adaptive path planning.
           </p>
@@ -90,17 +95,17 @@
             <strong>Minseong Bae</strong>, Youngseong Kim, Taeseong Ahn, Aron Lee,
             Junhwa Lee, Youngeun Choi, Youngmoon Lee
           </p>
-          <p class="meta">ICROS 2025, Jeonbuk National University International Convention Center, June 25-27, 2025</p>
+          <p class="meta"><strong>ICROS 2025</strong>, Jeonbuk National University International Convention Center, June 25-27, 2025</p>
           <p>
             Autonomous mobility system for supporting efficient passenger movement in airport
-            environments, combining navigation, perception, and passenger-oriented route support.
+            environments, combining <span class="underline">navigation, perception, and passenger-oriented route support</span>.
           </p>
         </li>
       </ol>
     </section>
 
     <section class="section" id="projects">
-      <h2>Projects</h2>
+      <h2>🛠️ Projects</h2>
 
       <ol class="publication-list">
         <li>
@@ -109,7 +114,7 @@
             <p class="tag">Autonomous Mobility</p>
             <h3>NUVI Autonomous Mobility</h3>
             <p>
-              Autonomous mobility system for airport environments with crowd-aware path planning,
+              <strong>Autonomous mobility system</strong> for airport environments with crowd-aware path planning,
               ROS2 Nav2, RealSense D455 pointclouds, and web UI control.
             </p>
             <p>
@@ -129,7 +134,7 @@
             <p class="tag">Navigation</p>
             <h3>Crowd Data-Based Navigation and ETA Prediction</h3>
             <p>
-              Congestion-aware route planning system that builds time-dependent costmaps from
+              <strong>Congestion-aware route planning system</strong> that builds time-dependent costmaps from
               public crowd-density data and estimates arrival time dynamically.
             </p>
             <p>
@@ -149,7 +154,7 @@
             <p class="tag">Service Robot</p>
             <h3>Crash Lab: Hospital Guidance Robot</h3>
             <p>
-              Hospital guide robot that combines GPT-3.5 Turbo based interaction with
+              <strong>Hospital guide robot</strong> that combines GPT-3.5 Turbo based interaction with
               LiDAR mapping, AMCL localization, and ROS2 path planning.
             </p>
             <p>
@@ -166,7 +171,7 @@
             <p class="tag">Vision and Manipulation</p>
             <h3>Tic-Tac-Toe Game Robot Arm</h3>
             <p>
-              Educational robot arm project that recognizes O/X tokens with vision and places
+              <strong>Educational robot arm project</strong> that recognizes O/X tokens with vision and places
               them on a board using robot control logic.
             </p>
             <p>
@@ -183,7 +188,7 @@
             <p class="tag">Robotics Design</p>
             <h3>Object Tracking and Balancing Robot</h3>
             <p>
-              Four-mecanum-wheel robot that follows colored objects while maintaining plate balance
+              <strong>Four-mecanum-wheel robot</strong> that follows colored objects while maintaining plate balance
               using IMU feedback and PID-based motor control.
             </p>
             <p>
@@ -198,39 +203,40 @@
 
     <section class="section split" id="experience">
       <div>
-        <h2>Profile</h2>
+        <h2>👤 Profile</h2>
         <ul class="compact-list">
-          <li><strong>Education</strong> BSc in Robotics, Hanyang University ERICA, 2022-Present</li>
+          <li><strong>Education</strong> BSc in Robotics, Hanyang University ERICA, 2022-2026</li>
+          <li><strong>Graduate</strong> Department of Artificial Intelligence Convergence, Hanyang University, 2026-Present</li>
           <li><strong>Interests</strong> Autonomous robots, SLAM, path planning, ETA prediction</li>
           <li><strong>Projects</strong> NUVI, capstone robotics, Crash Lab collaboration</li>
         </ul>
       </div>
 
       <div>
-        <h2>Skills</h2>
+        <h2>💡 Skills</h2>
         <ul class="skill-cloud">
           <li>Python</li>
           <li>C++</li>
           <li>ROS2</li>
-          <li>Nav2</li>
-          <li>SLAM</li>
-          <li>Computer Vision</li>
-          <li>Deep Learning</li>
           <li>OpenCV</li>
         </ul>
       </div>
     </section>
 
     <section class="section" id="contact">
-      <h2>Contact</h2>
+      <h2>✉️ Contact</h2>
       <p>
         I am open to robotics projects, research collaboration, and technical discussions.
-        Please reach out by email or GitHub.
+        Please reach out by clicking the icons below.
       </p>
-      <ul class="contact-list">
-        <li><strong>Email</strong> <a href="mailto:alstjd1118@hanyang.ac.kr">alstjd1118@hanyang.ac.kr</a></li>
-        <li><strong>GitHub</strong> <a href="https://github.com/baeminseongp" target="_blank" rel="noreferrer">github.com/baeminseongp</a></li>
-      </ul>
+      <div class="icon-links contact-icons" aria-label="Contact links">
+        <a href="mailto:alstjd1118@hanyang.ac.kr" aria-label="Email Minseong Bae">
+          <img src="assets/images/email-icon.svg" alt="Email" />
+        </a>
+        <a href="https://github.com/baeminseongp" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+          <img src="assets/images/github-icon.svg" alt="GitHub" />
+        </a>
+      </div>
     </section>
   </main>
 
