@@ -8,7 +8,7 @@
 </head>
 <body>
   <nav class="site-nav">
-    <a class="brand" href="index.html">Minseong Bae</a>
+    <a class="brand" href="#about">Minseong Bae</a>
     <div class="nav-links" aria-label="Primary navigation">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -32,8 +32,8 @@
           and LiDAR-based service robots.
         </p>
         <div class="text-links">
-          <a href="about.html">About</a>
-          <a href="projects.html">All Projects</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
           <a href="https://github.com/baeminseongp" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
@@ -70,24 +70,24 @@
     </section>
 
     <section class="section" id="projects">
-      <div class="section-heading">
-        <h2>Projects</h2>
-        <a href="projects.html">View all</a>
-      </div>
+      <h2>Projects</h2>
 
       <ol class="publication-list">
         <li>
           <img src="assets/images/project1.jpg" alt="NUVI Autonomous Mobility" />
           <div>
             <p class="tag">Autonomous Mobility</p>
-            <h3><a href="project1.html">NUVI Autonomous Mobility</a></h3>
+            <h3>NUVI Autonomous Mobility</h3>
             <p>
               Autonomous mobility system for airport environments with crowd-aware path planning,
               ROS2 Nav2, RealSense D455 pointclouds, and web UI control.
             </p>
+            <p>
+              Key features include crowd-aware costmap generation from time-dependent density data
+              and ROS2 Nav2 integration with RealSense D455 pointcloud sensing.
+            </p>
             <p class="meta">ROS2, Nav2, RTAB-Map, ORB-SLAM3, Python, C++</p>
             <div class="paper-links">
-              <a href="project1.html">Details</a>
               <a href="https://github.com/RAISELab/Nuvi.git" target="_blank" rel="noreferrer">Code</a>
             </div>
           </div>
@@ -97,14 +97,17 @@
           <img src="assets/images/project2.png" alt="Crowd data-based navigation and ETA prediction system" />
           <div>
             <p class="tag">Navigation</p>
-            <h3><a href="project2.html">Crowd Data-Based Navigation and ETA Prediction</a></h3>
+            <h3>Crowd Data-Based Navigation and ETA Prediction</h3>
             <p>
               Congestion-aware route planning system that builds time-dependent costmaps from
               public crowd-density data and estimates arrival time dynamically.
             </p>
+            <p>
+              Uses time-series crowd density ingestion, congestion-risk costmap generation,
+              dynamic speed and distance-bias tuning, and sigmoid smoothing for stable ETA output.
+            </p>
             <p class="meta">ROS2, Costmap Plugins, Python, C++, Public APIs</p>
             <div class="paper-links">
-              <a href="project2.html">Details</a>
               <a href="https://github.com/RAISELab/Nuvi.git" target="_blank" rel="noreferrer">Code</a>
             </div>
           </div>
@@ -114,15 +117,16 @@
           <img src="assets/images/project3.jpg" alt="Crash Lab hospital guidance robot" />
           <div>
             <p class="tag">Service Robot</p>
-            <h3><a href="project3.html">Crash Lab: Hospital Guidance Robot</a></h3>
+            <h3>Crash Lab: Hospital Guidance Robot</h3>
             <p>
               Hospital guide robot that combines GPT-3.5 Turbo based interaction with
               LiDAR mapping, AMCL localization, and ROS2 path planning.
             </p>
+            <p>
+              Built natural language Q&amp;A, text-to-speech responses, LiDAR-based mapping,
+              and Dijkstra-based path planning for service robot interaction.
+            </p>
             <p class="meta">ROS2, YDLidar X2, OpenAI API, C++, WebSocket</p>
-            <div class="paper-links">
-              <a href="project3.html">Details</a>
-            </div>
           </div>
         </li>
 
@@ -130,15 +134,16 @@
           <img src="assets/images/project4.webp" alt="Tic-Tac-Toe game robot arm" />
           <div>
             <p class="tag">Vision and Manipulation</p>
-            <h3><a href="project4.html">Tic-Tac-Toe Game Robot Arm</a></h3>
+            <h3>Tic-Tac-Toe Game Robot Arm</h3>
             <p>
               Educational robot arm project that recognizes O/X tokens with vision and places
               them on a board using robot control logic.
             </p>
+            <p>
+              Demonstrates O/X recognition with PyTorch and OpenCV, game logic,
+              real-time image capture, and precise robot arm control.
+            </p>
             <p class="meta">Python, PyTorch, OpenCV, ROS2</p>
-            <div class="paper-links">
-              <a href="project4.html">Details</a>
-            </div>
           </div>
         </li>
 
@@ -146,15 +151,16 @@
           <img src="assets/images/project5.png" alt="Object tracking and balancing robot" />
           <div>
             <p class="tag">Robotics Design</p>
-            <h3><a href="project5.html">Object Tracking and Balancing Robot</a></h3>
+            <h3>Object Tracking and Balancing Robot</h3>
             <p>
               Four-mecanum-wheel robot that follows colored objects while maintaining plate balance
               using IMU feedback and PID-based motor control.
             </p>
+            <p>
+              Combines color tracking, mecanum-wheel kinematics, PID motor control,
+              and IMU-based horizontal stabilization.
+            </p>
             <p class="meta">Arduino, C, Pixy Camera, IMU, PID Control</p>
-            <div class="paper-links">
-              <a href="project5.html">Details</a>
-            </div>
           </div>
         </li>
       </ol>
