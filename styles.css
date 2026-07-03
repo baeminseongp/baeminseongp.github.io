@@ -189,6 +189,13 @@ nav a {
   counter-reset: project;
 }
 
+.paper-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: paper;
+}
+
 .publication-list li {
   position: relative;
   display: grid;
@@ -199,7 +206,19 @@ nav a {
   counter-increment: project;
 }
 
+.paper-list li {
+  position: relative;
+  padding: 1.35rem 0;
+  border-top: 1px solid #eeeeee;
+  counter-increment: paper;
+}
+
 .publication-list li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.paper-list li:first-child {
   border-top: 0;
   padding-top: 0;
 }
@@ -209,6 +228,14 @@ nav a {
   position: absolute;
   left: -2.1rem;
   top: 1.45rem;
+  color: var(--muted);
+}
+
+.paper-list li::before {
+  content: counter(paper) ".";
+  position: absolute;
+  left: -2.1rem;
+  top: 1.4rem;
   color: var(--muted);
 }
 
@@ -226,7 +253,14 @@ nav a {
   line-height: 1.35;
 }
 
-.publication-list p {
+.paper-list h3 {
+  margin: 0.1rem 0 0.35rem;
+  font-size: 1.12rem;
+  line-height: 1.35;
+}
+
+.publication-list p,
+.paper-list p {
   margin: 0 0 0.45rem;
 }
 
@@ -240,6 +274,11 @@ nav a {
 .meta {
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.paper-subtitle {
+  color: var(--muted);
+  font-style: italic;
 }
 
 .split {
@@ -294,6 +333,14 @@ footer {
     gap: 0.45rem;
   }
 
+  .nav-links {
+    gap: 0.7rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
   .profile-header,
   .publication-list li,
   .split {
@@ -309,7 +356,8 @@ footer {
     width: min(100%, 280px);
   }
 
-  .publication-list li::before {
+  .publication-list li::before,
+  .paper-list li::before {
     display: none;
   }
 
